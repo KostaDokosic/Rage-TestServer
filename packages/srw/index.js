@@ -1,3 +1,4 @@
+const fs = require('fs');
 
 mp.events.add('playerCommand', (player, command) => {
     let arr = command.split(' ');
@@ -11,4 +12,14 @@ mp.events.add('playerCommand', (player, command) => {
         let v = mp.vehicles.new(mp.joaat(arr[1]), pos, { dimension: player.dimension });
         v.setColor(Math.floor(Math.random() * 111), Math.floor(Math.random() * 111));
     }
+});
+
+mp.events.add('save:position', (player, data) => {
+    data = JSON.parse(data);
+    data = `${data.pos}\n${data.head}\n${data.camPos}\n${data.camRot}\n${data.camDirect}\n${data.hit}\n---------------------------------------------\n\n\n`
+    fs.appendFile('kordinate.txt', data, (error) => {
+        if (err) throw err;
+        console.log('Kordinate sacuvane!');
+        player.outputChatBox('Kordinate sacuvane!');
+    });
 });
