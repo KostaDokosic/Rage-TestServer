@@ -23,3 +23,7 @@ mp.events.add('save:position', (player, data) => {
         player.outputChatBox('Kordinate sacuvane!');
     });
 });
+
+mp.events.add('packagesLoaded', () => {
+    //OVDE NALEPI REMOVE IPL
+});
