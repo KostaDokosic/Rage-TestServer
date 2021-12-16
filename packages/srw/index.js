@@ -12,6 +12,9 @@ mp.events.add('playerCommand', (player, command) => {
         let v = mp.vehicles.new(mp.joaat(arr[1]), pos, { dimension: player.dimension });
         v.setColor(Math.floor(Math.random() * 111), Math.floor(Math.random() * 111));
     }
+    else if(arr[0] == 'setped' || arr[0] == 'setskin') {
+        player.model = mp.joaat(arr[1]);
+    }
 });
 
 mp.events.add('save:position', (player, data) => {

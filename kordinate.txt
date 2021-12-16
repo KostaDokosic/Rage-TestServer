@@ -1,0 +1,18 @@
+Player Position: new mp.Vector3(15.4380, 18.5754, 70.5119)
+Player Heading: 70.9618
+Camera Position: new mp.Vector3(19.5323, 17.3511, 72.5313)
+Camera Rotation: new mp.Vector3(-18.3519, 0.0000, 67.9804)
+Camera Direction: new mp.Vector3(-0.8799, 0.3559, -0.3149)
+Raycast: new mp.Vector3(11.4026, 20.6389, 69.6223)
+---------------------------------------------
+
+
+Player Position: new mp.Vector3(15.4362, 18.5754, 70.5116)
+Player Heading: 68.7386
+Camera Position: new mp.Vector3(19.5298, 17.3513, 72.5310)
+Camera Rotation: new mp.Vector3(-18.3519, 0.0000, 67.9804)
+Camera Direction: new mp.Vector3(-0.8799, 0.3559, -0.3149)
+Raycast: new mp.Vector3(11.4012, 20.6387, 69.6224)
+---------------------------------------------
+
+
