@@ -30,3 +30,5 @@ mp.events.add('save:position', (player, data) => {
 mp.events.add('packagesLoaded', () => {
     //OVDE NALEPI REMOVE IPL
 });
+
+require('./exitHandler.js');
