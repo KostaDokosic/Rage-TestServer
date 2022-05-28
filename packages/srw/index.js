@@ -32,4 +32,4 @@ mp.events.add('packagesLoaded', () => {
 });
 
 require('./exitHandler.js');
-require('./charcreator');
+require('../charcreator');
