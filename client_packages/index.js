@@ -1,4 +1,5 @@
 require('./noclip');
+require('./charcreator');
 
 let render;
 const gameplayCam = mp.cameras.new('gameplay');
