@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/KostaDokosic/Rage-TestServer/issues"
   },
-  "homepage": "https://github.com/KostaDokosic/Rage-TestServer#readme"
+  "homepage": "https://github.com/KostaDokosic/Rage-TestServer#readme",
+  "devDependencies": {
+    "@types/ragemp-c": "github:CocaColaBear/types-ragemp-c#master",
+    "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s#master"
+  }
 }

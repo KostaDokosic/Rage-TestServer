@@ -27,7 +27,14 @@ mp.events.add("playerCommand", (command) => {
 
         let data = JSON.stringify({ pos: pos, head: head, camPos: camPos, camRot: camRot, camDirect: camDirect, hit: hit });
         mp.events.callRemote('save:position', data);
-	}
+	} else if(commandName === 'veh') {
+        mp.vehicles.new(mp.game.joaat(args[0]), mp.players.local.position, {
+            alpha: 255,
+            dimension: mp.players.local.dimension,
+            locked: false,
+            engine: true
+        });
+    }
 });
 
 function pointingAt(distance) {
@@ -74,3 +81,11 @@ mp.events.add('playerReady', () => {
         });
     });
 });
+
+
+mp.events.add({
+    'render': () => {
+        mp.players.local.setProofs(true, true, true, true, true, true, true, true);
+        mp.players.local.setInvincible(true);
+    }
+})
